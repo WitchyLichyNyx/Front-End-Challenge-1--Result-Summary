@@ -7,7 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href="style.css" rel="stylesheet">
   <title>Frontend Mentor | Results summary component</title>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Source+Code+Pro&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -17,43 +19,59 @@
 <body>
 
 <div class="content">
+  <div id="border-shadow">
+    <div class="first card">
+    <p>Your Result</p>
+        <div id="orb">
+          <h3 id="seventysix">76</h3>
+          <p id="tinySeventysix">of 100</p>
+        </div>
   
-  <div class="first card">
-  <p>Your Result</p>
-      <div id="orb">
-        <h3 id="seventysix">76</h3>
-        <p id="tinySeventysix">of 100</p>
+      <div id="bottomtext">
+        <h3>Great</h3>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
       </div>
- 
-    <div id="bottomtext">
-      <h3>Great</h3>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+
+    <div class="second card">
+      <div id="secContent">
+        <h2 id="summary"> Summary</h2>
+          <div>
+            <div id="red">
+              <h4 class="hItem">Reaction</h4>
+              <div class="rating">
+                <p class="pItem bold">80 </p>
+                <p class="pItem">/ 100</p>
+              </div>
+            </div>
+            <div id="yellow">
+              <h4 class="hItem">Memory</h4>
+              <div class="rating">
+                <p class="pItem bold">92</p>
+                <p class="pItem">/ 100</p>
+              </div>
+            </div>
+            <div id="green">
+              <h4 class="hItem">Verbal</h4>
+              <div class="rating">
+                <p class="pItem bold">61</p>
+                <p class="pItem">/ 100</p>
+              </div>
+            </div>
+            <div id="blue">
+              <h4 class="hItem">Visual</h4>
+              <div class="rating">
+                <p class="pItem bold">72</p>
+                <p class="pItem">/ 100</p>
+              </div>
+            </div>
+            <div id="continue">
+              <h4 id="Button">Continue</h4>
+            </div>
+          </div>  
+      </div>
     </div>
   </div>
-
-  <div class="second card">
-    <h2 id="summary"> Summary</h2>
-      <div>
-        <div>
-          <h4>Reaction</h4>
-          <p>80 / 100</p>
-        </div>
-        <div>
-          <h4>Memory</h4>
-          <p>92 / 100</p>
-        </div>
-        <div>
-          <h4>Verbal</h4>
-          <p>61 / 100</p>
-        </div>
-        <div>
-          <h4>Visual</h4>
-          <p>72 / 100</p>
-        </div>
-        <h4 id="Button">Continue</h4>
-      </div>  
-      <div id="cheeky"></div>
-    </div>
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
