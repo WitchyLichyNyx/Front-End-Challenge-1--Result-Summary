@@ -95,6 +95,7 @@ div > #secContent{
     justify-content: space-between;
     color: rgb(197, 5, 5);
     margin-bottom: 5px;
+
 }
 .hItem{align-self: flex-start;}
 .pItem{
@@ -144,6 +145,10 @@ div > #secContent{
     margin-bottom: 5px;
 }
 
+img{
+    margin-right: -80px;
+}
+
 #continue{
     margin-top: 50px;
     display: flex;
@@ -161,8 +166,25 @@ div > #secContent{
  display: inline-block;
 }
 
-@media (max-width: 480px) {
-    .content{
+/* Media */
+@media (max-width: 600px) {
+    .content > #border-shadow {
+       
+        height: 50rem;
+        width: 15rem;
+        margin: auto;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font-family: "Hanken Grotesk";
+        font-size: smaller;
+    }
+
+}
+@media (hover:hover){
+    #continue:hover{
+        cursor:pointer;
     }
 }
